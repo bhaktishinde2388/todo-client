@@ -1,0 +1,87 @@
+body {
+   background-color: #ADEED9;
+   min-height: 100vh;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #0ABAB5;
+  margin: 30px 0;
+  text-shadow: 2px 2px 4px rgba(10, 186, 181, 0.1);
+}
+
+.new-todo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 400px;
+  padding: 30px 40px;
+  box-shadow: 0 4px 25px rgba(10, 186, 181, 0.15);
+  margin: 50px auto;
+  border-radius: 25px;
+  background-color: #FFEDF3;
+  transition: transform 0.2s ease;
+}
+
+.new-todo-form:hover {
+  transform: translateY(-5px);
+}
+
+.input-box {
+  height: 40px;
+  font-size: 16px;
+  padding: 5px 15px;
+  border: 2px solid #56DFCF;
+  border-radius: 12px;
+  background-color: white;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input-box:focus {
+  outline: none;
+  border-color: #0ABAB5;
+  box-shadow: 0 0 8px rgba(10, 186, 181, 0.2);
+}
+
+.select-box {
+  height: 40px;
+  font-size: 16px;
+  padding: 5px 15px;
+  border: 2px solid #56DFCF;
+  border-radius: 12px;
+  background-color: white;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.select-box:focus {
+  outline: none;
+  border-color: #0ABAB5;
+}
+
+.emoji-box {
+  font-size: 24px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.add-btn {
+  height: 45px;
+  width: 140px;
+  font-size: 16px;
+  margin: 15px auto;
+  border-radius: 12px;
+  font-weight: bold;
+  background-color: #0ABAB5;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.add-btn:hover {
+  background-color: #56DFCF;
+  transform: translateY(-2px);
+}

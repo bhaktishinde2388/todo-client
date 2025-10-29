@@ -1,0 +1,92 @@
+.heading {
+  text-align: center;
+  color: #0ABAB5;
+  font-size: 2.5em;
+  margin: 20px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.todo-card {
+  border: none;
+  margin: 20px;
+  padding: 15px 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(10, 186, 181, 0.1);
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #FFEDF3;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.todo-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(10, 186, 181, 0.15);
+}
+
+.todo-icon{
+    font-size: 40px;
+    margin: 0 20px;
+}
+
+.todo-priority {
+    background-color: #0ABAB5;
+    position: absolute;
+    top: 15px;
+    right: 100px;
+    color: white;
+    padding: 6px 12px;
+    min-width: 50px;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(10, 186, 181, 0.2);
+}
+
+.todo-created-at {
+    position: absolute;
+    bottom: 10px;
+    right: 100px;
+    color: #56DFCF;
+    font-style: italic;
+}
+
+.todo-done {
+    text-decoration: line-through;
+    opacity: 0.7;
+    background-color: #ADEED9;
+}
+
+.fab {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    background-color: #0ABAB5;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 20px;
+    box-shadow: 0 4px 15px rgba(10, 186, 181, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.fab:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(10, 186, 181, 0.4);
+    background-color: #56DFCF;
+}
+
+.del-btn{
+    position: absolute;
+    right: 0;
+}
+
+.del-icon{
+    height: 35px;
+    position: absolute;
+    right: 30px;
+    border-left: 1px dotted black;
+    padding-left: 15px;
+}
