@@ -10,7 +10,7 @@ function Home() {
   const [todos, setTodos] = useState([]);
 
   const loadTodos = async () => {
-    const response = await axios.get("https://todo-backend-eight-xi.vercel.app/todos");
+    const response = await axios.get("https://todo-server-r9c1.onrender.com/todos");
     setTodos(response.data.data);
   };
 
@@ -20,7 +20,7 @@ function Home() {
 
   const deleteTodo = async (id) => {
     try {
-      const response = await axios.delete(`https://todo-backend-eight-xi.vercel.app//todos/${id}`);
+      const response = await axios.delete(`https://todo-server-r9c1.onrender.com/todos/${id}`);
   
       if (response) {
         toast.success(response.data.message);
