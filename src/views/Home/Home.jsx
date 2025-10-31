@@ -7,10 +7,13 @@ import toast, { Toaster } from 'react-hot-toast'
 
 
 function Home() {
+
+  const VITE_API_URL = import.meta.env.VITE_API_URL;
+
   const [todos, setTodos] = useState([]);
 
   const loadTodos = async () => {
-    const response = await axios.get("https://todo-server-r9c1.onrender.com/todos");
+    const response = await axios.get(`${VITE_API_URL}/todos`,);
     setTodos(response.data.data);
   };
 
@@ -20,7 +23,7 @@ function Home() {
 
   const deleteTodo = async (id) => {
     try {
-      const response = await axios.delete(`https://todo-server-r9c1.onrender.com/todos/${id}`);
+      const response = await axios.delete(`${API_URL}/todos/${id}`);
   
       if (response) {
         toast.success(response.data.message);

@@ -13,11 +13,14 @@ function NewTodo() {
 
   const [emojiPickerOpen, setEmojiPickerOpen] = useState(false);
 
+
+   const API_URL = import.meta.env.VITE_API_URL;
+
   const addTodo = async () => {
     try {
       // Use the same backend base URL as Home so newly added todos show up
       const response = await axios.post(
-        `https://todo-server-r9c1.onrender.com/todos`,
+        `${API_URL}/todos`,
         todoData
       );
 
