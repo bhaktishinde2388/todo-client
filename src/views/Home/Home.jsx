@@ -20,7 +20,7 @@ function Home() {
 
   const deleteTodo = async (id) => {
     try {
-      const response = await axios.delete(`${import.meta.env.VITE_API_URL}/${id}`);
+      const response = await axios.delete(`${import.meta.env.VITE_API_URL}/todos/${id}`);
   
       if (response) {
         toast.success(response.data.message);
